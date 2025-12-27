@@ -1,0 +1,469 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    letter-spacing: -0.5px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Stories Bar */
+.stories-bar {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.stories-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 66px;
+}
+
+.story-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.story-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.story-username {
+    font-size: 12px;
+    color: #262626;
+    max-width: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Feed */
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Post */
+.post {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 0;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    gap: 12px;
+}
+
+.post-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-username {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.post-image-container {
+    width: 100%;
+    background-color: #000;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-image {
+    width: fit-content;
+    display: block;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+}
+
+.post-actions-left {
+    display: flex;
+    gap: 16px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+    opacity: 0.6;
+}
+
+.action-btn svg {
+    width: 24px;
+    height: 24px;
+    stroke: #262626;
+    stroke-width: 2;
+}
+
+.like-btn.liked svg {
+    fill: #ed4956;
+    stroke: #ed4956;
+}
+
+.save-btn.saved svg {
+    fill: #262626;
+}
+
+.post-likes {
+    padding: 0 16px 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.post-caption {
+    padding: 0 16px 8px 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.caption-username {
+    font-weight: 600;
+    color: #262626;
+    margin-right: 6px;
+}
+
+.caption-text {
+    color: #262626;
+}
+
+.post-comments {
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.comment {
+    padding: 4px 0;
+    display: flex;
+    gap: 6px;
+}
+
+.comment-username {
+    font-weight: 600;
+    color: #262626;
+}
+
+.comment-text {
+    color: #262626;
+}
+
+.post-comment-input {
+    border-top: 1px solid #efefef;
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.comment-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #262626;
+}
+
+.comment-input::placeholder {
+    color: #8e8e8e;
+}
+
+.post-btn {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+}
+
+.post-btn:hover {
+    opacity: 0.7;
+}
+
+.post-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid #dbdbdb;
+    padding: 16px;
+    text-align: center;
+    z-index: 100;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-bottom: 8px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a {
+    font-size: 12px;
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Policy Pages */
+.policy-page {
+    padding: 20px;
+}
+
+.policy-container {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.policy-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.policy-section {
+    margin-bottom: 32px;
+}
+
+.policy-section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 12px;
+}
+
+.policy-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.policy-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #262626;
+    margin-bottom: 12px;
+}
+
+.policy-section ul {
+    margin-left: 24px;
+    margin-bottom: 12px;
+}
+
+.policy-section li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+.policy-section strong {
+    font-weight: 600;
+}
+
+.policy-section em {
+    font-style: italic;
+    color: #8e8e8e;
+}
+
+.policy-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.policy-link {
+    color: #0095f6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.policy-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .stories-bar {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .post {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .policy-container {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .policy-title {
+        font-size: 24px;
+    }
+
+    .policy-section h2 {
+        font-size: 20px;
+    }
+
+    .policy-section h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-content {
+        padding: 0 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .story {
+        min-width: 60px;
+    }
+
+    .story-avatar {
+        width: 48px;
+        height: 48px;
+    }
+
+    .footer-nav {
+        gap: 12px;
+    }
+}

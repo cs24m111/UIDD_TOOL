@@ -1,0 +1,34 @@
+[
+  {
+    "statement": "We confirm the platform may host AI-generated or machine-assisted content and will treat it accordingly.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We maintain and display a disclosure policy that explains how synthetic content is handled.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We label AI-generated content visibly so users can tell it apart.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We embed permanent identifiers/metadata in synthetic content where feasible for traceability.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We notify users clearly when content is AI-generated.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We use reasonable technical measures to detect and track synthetic content.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We perform regular audits and reviews of systems that handle synthetic content.",
+    "status": "implemented"
+  },
+  {
+    "statement": "We train staff and designate responsible officers to manage AI disclosure and compliance.",
+    "status": "implemented"
+  }
+]
