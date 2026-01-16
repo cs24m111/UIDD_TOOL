@@ -13,7 +13,7 @@ Get the IT Rules 2021 Compliance Checker running in 5 minutes!
 ### 1. Navigate to Project Directory
 
 ```bash
-cd C:\Upendra\IITT\KP_Final
+cd \KP_Final
 ```
 
 ### 2. Create Virtual Environment
